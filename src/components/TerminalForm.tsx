@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { NeonButton } from './NeonButton';
+import { cvData } from '../data/cvData';
+
 interface FormData {
   name: string;
   email: string;
   message: string;
 }
+
 export function TerminalForm() {
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -12,18 +15,26 @@ export function TerminalForm() {
     message: ''
   });
   const [focusedField, setFocusedField] = useState<string | null>(null);
-  const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = (e: FormEvent) => {
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
-      });
-    }, 3000);
+
+    const to = cvData.personal.social.email;
+    const subject = `New message from ${formData.name}`;
+    const bodyLines = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      '',
+      'Message:',
+      formData.message
+    ];
+    const body = bodyLines.join('\n');
+
+    const mailtoLink = `mailto:${to}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
   };
   const handleChange = (field: keyof FormData, value: string) => {
     setFormData((prev) => ({
@@ -111,15 +122,9 @@ export function TerminalForm() {
         </div>
       </div>
 
-      {submitted ?
-      <div className="border border-neon-green bg-neon-green/10 px-4 py-3 font-mono text-neon-green">
-          <span className="text-neon-cyan">$</span> Message sent successfully! ✓
-        </div> :
-
-      <NeonButton type="submit" variant="cyan">
-          send_message
-        </NeonButton>
-      }
+      <NeonButton variant="cyan" type="submit">
+        send_message
+      </NeonButton>
     </form>);
 
 }

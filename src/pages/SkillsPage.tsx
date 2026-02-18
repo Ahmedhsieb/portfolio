@@ -47,18 +47,18 @@ export function SkillsPage() {
           <div className="flex flex-wrap gap-3">
             {[
             'REST APIs',
-            'GraphQL',
+            // 'GraphQL',
             'Microservices',
-            'Event-Driven Architecture',
-            'CI/CD',
-            'TDD',
-            'Agile/Scrum',
-            'System Design',
-            'Performance Optimization',
-            'Security Best Practices',
+            // 'Event-Driven Architecture',
+            // 'CI/CD',
+            // 'TDD',
+            // 'Agile/Scrum',
+            // 'System Design',
+            // 'Performance Optimization',
+            // 'Security Best Practices',
             'Code Review',
             'Technical Documentation',
-            'Mentoring',
+            // 'Mentoring',
             'Problem Solving'].
             map((skill) =>
             <span

@@ -29,20 +29,10 @@ export function HomePage() {
 
         <div className="space-y-6 mb-12">
           <TerminalPrompt
-            text="Initializing portfolio system..."
+            text="Connection established. Welcome to my portfolio."
             speed={30}
-            delay={500} />
-
-          <TerminalPrompt
-            text="Loading developer profile..."
-            speed={30}
-            delay={2000} />
-
-          <TerminalPrompt
-            text="Connection established. Welcome."
-            speed={30}
-            delay={3500}
-            showCursor={false} />
+            delay={5000}
+            showCursor={true} />
 
         </div>
 
@@ -91,15 +81,6 @@ export function HomePage() {
                 <LinkedinIcon className="w-6 h-6" />
               </a>
               <a
-              href={cvData.personal.social.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-text-muted hover:text-neon-cyan transition-colors"
-              aria-label="Twitter profile">
-
-                <TwitterIcon className="w-6 h-6" />
-              </a>
-              <a
               href={`mailto:${cvData.personal.social.email}`}
               className="text-text-muted hover:text-neon-cyan transition-colors"
               aria-label="Email contact">
@@ -107,13 +88,13 @@ export function HomePage() {
                 <MailIcon className="w-6 h-6" />
               </a>
             </div>
-
+{/* 
             <div className="pt-12 text-center">
               <ChevronDownIcon
               className="w-8 h-8 text-neon-green mx-auto animate-bounce"
               aria-label="Scroll down" />
 
-            </div>
+            </div> */}
           </div>
         }
       </div>

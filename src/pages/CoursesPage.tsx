@@ -39,7 +39,7 @@ export function CoursesPage() {
                 </div>
               </div>
 
-              <a
+              {/* <a
               href={course.certificate}
               target="_blank"
               rel="noopener noreferrer"
@@ -48,7 +48,7 @@ export function CoursesPage() {
 
                 <ExternalLinkIcon className="w-4 h-4" aria-hidden="true" />
                 <span>View Certificate</span>
-              </a>
+              </a> */}
             </article>
           )}
         </div>

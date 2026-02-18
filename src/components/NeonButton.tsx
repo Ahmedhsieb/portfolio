@@ -1,5 +1,5 @@
 import React from 'react';
-interface NeonButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface NeonButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'cyan' | 'magenta' | 'green';
   children: React.ReactNode;
 }

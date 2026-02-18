@@ -137,6 +137,7 @@ export const cvData: CVData = {
     items: [
     { name: 'Git', level: 90, icon: '📦' },
     { name: 'Debugger Tools', level: 85, icon: '🐞' },
+    { name: 'Cpanel', level: 85, icon: '🔧' },
     { name: 'Laravel Telescope', level: 85, icon: '🔭' }]
 
   }],
@@ -242,7 +243,13 @@ export const cvData: CVData = {
 
   courses: [
   {
-    name: 'Backend Developer',
+    name: 'Laravel Development',
+    provider: 'Udemy',
+    year: '2025',
+    certificate: ''
+  },
+  {
+    name: 'Backend Development',
     provider: 'Itrax Academy',
     year: '2023',
     certificate: ''
@@ -252,7 +259,14 @@ export const cvData: CVData = {
     provider: 'Edraak',
     year: '2023',
     certificate: ''
-  }]
+    },
+  {
+    name: 'Leadership',
+    provider: 'Leadership Center',
+    year: '2021',
+    certificate: ''
+    },
+  ]
 
 
 };

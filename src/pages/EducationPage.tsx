@@ -54,31 +54,25 @@ export function EducationPage() {
           <h2 className="text-2xl font-bold text-neon-green font-mono mb-4">
             <span className="text-neon-cyan">&gt;</span> Academic Achievements
           </h2>
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="border-l-2 border-neon-cyan pl-4">
-              <div className="text-neon-cyan text-xl font-bold font-mono">
-                3.9/4.0
-              </div>
-              <div className="text-text-muted text-sm">GPA</div>
-            </div>
-            <div className="border-l-2 border-neon-magenta pl-4">
-              <div className="text-neon-magenta text-xl font-bold font-mono">
-                Dean's List
-              </div>
-              <div className="text-text-muted text-sm">All Semesters</div>
-            </div>
-            <div className="border-l-2 border-neon-green pl-4">
-              <div className="text-neon-green text-xl font-bold font-mono">
-                Published
-              </div>
-              <div className="text-text-muted text-sm">Senior Thesis</div>
-            </div>
-            <div className="border-l-2 border-neon-cyan pl-4">
-              <div className="text-neon-cyan text-xl font-bold font-mono">
-                Top 5%
-              </div>
-              <div className="text-text-muted text-sm">Class Ranking</div>
-            </div>
+          <div className="mt-6 border-l-2 border-neon-magenta pl-4">
+            <h3 className="text-neon-magenta text-lg font-bold font-mono mb-2">IEEE-BUB SB Activities</h3>
+            <ul className="space-y-1 text-text-muted text-sm">
+              <li>− Joined as problem solving member (Oct 2022 – Aug 2023)</li>
+              <li>− Studying C++ & problem solving</li>
+              <li>− Work on Codeforces</li>
+              <li>− Joined as Scientific Arduino member (Oct 2021 – Aug 2022)</li>
+              <li>− Studying C-Arduino and Arduino system</li>
+              <li>− Built Arduino projects</li>
+            </ul>
+          </div>
+          <div className="mt-6 border-l-2 border-neon-cyan pl-4">
+            <h3 className="text-neon-cyan text-lg font-bold font-mono mb-2">Error Team Activities</h3>
+            <ul className="space-y-1 text-text-muted text-sm">
+              <li>− Joined as HR member (Oct 2021 – Aug 2022)</li>
+              <li>− Help the team to organize events</li>
+              <li>− Help to evaluate the team's performance</li>
+              <li>− Make team reports</li>
+            </ul>
           </div>
         </div>
       </div>

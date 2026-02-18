@@ -48,7 +48,7 @@ export function ContactPage() {
                   className="flex items-center gap-3 text-text-muted hover:text-neon-cyan transition-colors group">
 
                   <GithubIcon className="w-5 h-5 text-neon-cyan group-hover:text-neon-magenta transition-colors" />
-                  <span className="font-mono">github.com/alexcipher</span>
+                  <span className="font-mono">github.com/Ahmedhsieb</span>
                 </a>
                 <a
                   href={cvData.personal.social.linkedin}
@@ -57,16 +57,7 @@ export function ContactPage() {
                   className="flex items-center gap-3 text-text-muted hover:text-neon-cyan transition-colors group">
 
                   <LinkedinIcon className="w-5 h-5 text-neon-cyan group-hover:text-neon-magenta transition-colors" />
-                  <span className="font-mono">linkedin.com/in/alexcipher</span>
-                </a>
-                <a
-                  href={cvData.personal.social.twitter}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-text-muted hover:text-neon-cyan transition-colors group">
-
-                  <TwitterIcon className="w-5 h-5 text-neon-cyan group-hover:text-neon-magenta transition-colors" />
-                  <span className="font-mono">twitter.com/alexcipher</span>
+                  <span className="font-mono">linkedin.com/in/ahmed-osama-573634331</span>
                 </a>
               </div>
             </div>
@@ -103,9 +94,9 @@ export function ContactPage() {
               </div>
             </div>
 
-            <div className="border border-neon-green/30 bg-dark-secondary p-4">
+            {/* <div className="border border-neon-green/30 bg-dark-secondary p-4">
               <ASCIIArt variant="code" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

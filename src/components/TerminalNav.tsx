@@ -15,6 +15,10 @@ const navItems = [
   label: 'skills'
 },
 {
+  path: '/services',
+  label: 'services'
+},
+{
   path: '/experience',
   label: 'experience'
 },
